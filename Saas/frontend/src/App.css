@@ -1,0 +1,262 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+
+h2 {
+  text-align: center;
+  color: #2d8ece;
+}
+h4 {
+  text-align: center;
+  color: #2d8ece;
+}
+
+.mainphoto {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.mainphoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+nav {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  color: black;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+  width: 50px;
+  height: 45px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+  transform: rotate(360deg);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin-right: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(45, 142, 207);
+  ;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #30b3b360;
+}
+
+
+.user-table {
+  border-collapse: collapse;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.user-table thead th {
+  background-color: #f2f2f2;
+  text-align: left;
+  padding: 7px;
+}
+
+.user-table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+
+.user-table select {
+  width: 100px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.user-table select.active {
+  color: green;
+}
+
+
+.user-table select.inactive {
+  color: red;
+}
+
+
+.user-table tbody tr:hover {
+  background-color: #f7f7f7;
+}
+
+
+.user-table select:hover {
+  background-color: #f2f2f2;
+}
+
+
+
+
+.Organizationnav {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px 0px 5px 0px;
+  background: rgb(111, 174, 216);
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2d8ece;
+}
+
+input[type="text"],[type="number"] {
+  outline: none;
+  display: flex;
+  border: solid rgb(111, 174, 216) 2px;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px 0px 5px 10px;
+  background: whitesmoke;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+input [type="submit"],
+select {
+  outline: none;
+  display: flex;
+  border: solid rgb(111, 174, 216) 2px;
+  border-radius: 15px;
+  padding: 10px;
+  background: whitesmoke;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+input[type="text"]:active {
+  opacity: 0.6;
+}
+
+.frombody {
+  width: 40%;
+  height: 40%;
+  overflow: hidden;
+  text-align: center;
+  margin: 100px 150px 5px 400px;
+  padding: 1em;
+  background: white;
+  color: rgb(66, 81, 82);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 16px 32px 0 rgba(20, 18, 18, 0.2);
+  transition: 0.3s;
+  background-image: url("https://images.unsplash.com/photo-1625225233840-695456021cde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+
+
+}
+
+
+form {
+  margin: 15px 5px 15px 20px;
+  display: flex;
+  flex-direction: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+select {
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: rgb(111, 174, 216);
+  color: #fff;
+  border: 1px solid rgb(111, 174, 216);
+}
+
+.pagination button.disabled {
+  background-color: #ccc;
+  cursor: not-allowed; 
+}
